@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		811D20E2202786C500590BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20E1202786C500590BBC /* AppDelegate.swift */; };
-		811D20E4202786C500590BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20E3202786C500590BBC /* ViewController.swift */; };
 		811D20E6202786C500590BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D20E5202786C500590BBC /* Assets.xcassets */; };
 		811D20E9202786C500590BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811D20E7202786C500590BBC /* Main.storyboard */; };
+		811D20F520278A7400590BBC /* ToolbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20F420278A7400590BBC /* ToolbarVC.swift */; };
+		811D20F72027942C00590BBC /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20F62027942C00590BBC /* ChannelVC.swift */; };
+		811D20F92027944C00590BBC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20F82027944C00590BBC /* ChatVC.swift */; };
+		811D20FB202797AE00590BBC /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20FA202797AE00590BBC /* MainWindowController.swift */; };
+		811D20FE2027985D00590BBC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20FD2027985D00590BBC /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		811D20DE202786C500590BBC /* Chatline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D20E1202786C500590BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		811D20E3202786C500590BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		811D20E5202786C500590BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811D20E8202786C500590BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		811D20EA202786C500590BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		811D20EB202786C500590BBC /* Chatline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chatline.entitlements; sourceTree = "<group>"; };
+		811D20F420278A7400590BBC /* ToolbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarVC.swift; sourceTree = "<group>"; };
+		811D20F62027942C00590BBC /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		811D20F82027944C00590BBC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		811D20FA202797AE00590BBC /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		811D20FD2027985D00590BBC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +61,50 @@
 		811D20E0202786C500590BBC /* Chatline */ = {
 			isa = PBXGroup;
 			children = (
+				811D20FC2027984800590BBC /* Utilities */,
+				811D20F320278A3B00590BBC /* Model */,
+				811D20F220278A3300590BBC /* View */,
+				811D20F120278A2700590BBC /* Controller */,
 				811D20E1202786C500590BBC /* AppDelegate.swift */,
-				811D20E3202786C500590BBC /* ViewController.swift */,
 				811D20E5202786C500590BBC /* Assets.xcassets */,
 				811D20E7202786C500590BBC /* Main.storyboard */,
 				811D20EA202786C500590BBC /* Info.plist */,
 				811D20EB202786C500590BBC /* Chatline.entitlements */,
 			);
 			path = Chatline;
+			sourceTree = "<group>";
+		};
+		811D20F120278A2700590BBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				811D20F420278A7400590BBC /* ToolbarVC.swift */,
+				811D20F62027942C00590BBC /* ChannelVC.swift */,
+				811D20F82027944C00590BBC /* ChatVC.swift */,
+				811D20FA202797AE00590BBC /* MainWindowController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		811D20F220278A3300590BBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		811D20F320278A3B00590BBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		811D20FC2027984800590BBC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				811D20FD2027985D00590BBC /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				811D20E4202786C500590BBC /* ViewController.swift in Sources */,
+				811D20F92027944C00590BBC /* ChatVC.swift in Sources */,
+				811D20F520278A7400590BBC /* ToolbarVC.swift in Sources */,
+				811D20F72027942C00590BBC /* ChannelVC.swift in Sources */,
 				811D20E2202786C500590BBC /* AppDelegate.swift in Sources */,
+				811D20FB202797AE00590BBC /* MainWindowController.swift in Sources */,
+				811D20FE2027985D00590BBC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
