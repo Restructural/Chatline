@@ -13,6 +13,8 @@ import Cocoa
 let chatPurple = NSColor(calibratedRed: 0.10, green: 0.12, blue: 0.09, alpha: 1.00)
 let chatGreen = NSColor(calibratedRed: 0.02, green: 0.16, blue: 0.18, alpha: 1.00)
 
-
+// Fonts
+let HELVETICA_REGULAR = "HelveticaNeue"
+let HELVETICA_BOLD = "HelveticaNeue-Bold"
 
 
