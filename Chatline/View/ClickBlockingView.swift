@@ -9,7 +9,7 @@
 import Cocoa
 
 class ClickBlockingView: NSView {
-
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
     }
@@ -19,3 +19,4 @@ class ClickBlockingView: NSView {
     override func mouseDragged(with event: NSEvent) {}
     override func mouseMoved(with event: NSEvent) {}
 }
+

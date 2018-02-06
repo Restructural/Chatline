@@ -881,7 +881,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="426-xQ-pqe">
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="426-xQ-pqe">
                                 <rect key="frame" x="149" y="235" width="41" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="mZy-7P-xwV"/>
@@ -898,17 +898,19 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mZW-fo-kLK" secondAttribute="bottom" id="0Lz-c3-JTM"/>
                             <constraint firstItem="426-xQ-pqe" firstAttribute="top" secondItem="dLc-ad-q07" secondAttribute="bottom" constant="8" id="1S6-o3-a89"/>
+                            <constraint firstItem="426-xQ-pqe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xbs-4G-uli" secondAttribute="leading" id="3av-XP-Lhw"/>
                             <constraint firstItem="0Vf-Yc-Lma" firstAttribute="top" secondItem="xbs-4G-uli" secondAttribute="top" constant="8" id="3wt-bv-0iw"/>
                             <constraint firstAttribute="trailing" secondItem="mZW-fo-kLK" secondAttribute="trailing" id="4jH-6R-HiO"/>
                             <constraint firstItem="mZW-fo-kLK" firstAttribute="leading" secondItem="xbs-4G-uli" secondAttribute="leading" id="9sm-bg-1P7"/>
                             <constraint firstAttribute="trailing" secondItem="dLc-ad-q07" secondAttribute="trailing" constant="10" id="AdU-Wx-X8l"/>
                             <constraint firstItem="dLc-ad-q07" firstAttribute="top" secondItem="0Vf-Yc-Lma" secondAttribute="bottom" constant="8" id="Kmn-TO-DR8"/>
                             <constraint firstItem="sbx-Kp-h91" firstAttribute="leading" secondItem="xbs-4G-uli" secondAttribute="leading" constant="10" id="P6r-XS-ScT"/>
-                            <constraint firstAttribute="trailing" secondItem="426-xQ-pqe" secondAttribute="trailing" constant="10" id="PiA-1N-ID8"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="426-xQ-pqe" secondAttribute="trailing" id="PiA-1N-ID8"/>
                             <constraint firstItem="dLc-ad-q07" firstAttribute="leading" secondItem="xbs-4G-uli" secondAttribute="leading" constant="10" id="Xon-GG-rVX"/>
                             <constraint firstItem="mZW-fo-kLK" firstAttribute="top" secondItem="426-xQ-pqe" secondAttribute="bottom" constant="8" id="dyx-29-AHl"/>
                             <constraint firstItem="0Vf-Yc-Lma" firstAttribute="centerX" secondItem="xbs-4G-uli" secondAttribute="centerX" id="l5b-Bt-r2Q"/>
                             <constraint firstItem="sbx-Kp-h91" firstAttribute="top" secondItem="dLc-ad-q07" secondAttribute="bottom" constant="8" id="mEb-gZ-Vrc"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sbx-Kp-h91" secondAttribute="trailing" constant="20" symbolic="YES" id="qBO-Dt-QKP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -937,7 +939,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j7z-gI-chj">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7z-gI-chj">
                                 <rect key="frame" x="87" y="271" width="177" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This is where we do the chats" id="JSP-oN-os9">
                                     <font key="font" size="13" name="HelveticaNeue"/>
@@ -1034,7 +1036,7 @@
                                     <action selector="sendMessageButtonClicked:" target="6d1-gV-fVE" id="UTl-qI-pQ8"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X4H-2M-zLV">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4H-2M-zLV">
                                 <rect key="frame" x="14" y="88" width="195" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CDEVANS is typing a message..." id="Mbk-DN-2Vx">
                                     <font key="font" size="13" name="HelveticaNeue"/>
@@ -1049,14 +1051,14 @@
                             <constraint firstItem="Yom-qg-GWJ" firstAttribute="leading" secondItem="Sz0-RK-GbH" secondAttribute="leading" constant="16" id="FYB-Cc-6hf"/>
                             <constraint firstItem="X4H-2M-zLV" firstAttribute="top" secondItem="uiH-dQ-WUu" secondAttribute="bottom" constant="2" id="IxD-FD-AO8"/>
                             <constraint firstAttribute="trailing" secondItem="uiH-dQ-WUu" secondAttribute="trailing" id="LN9-1w-jGN"/>
-                            <constraint firstItem="X4H-2M-zLV" firstAttribute="leading" secondItem="LLj-wd-xJx" secondAttribute="leading" id="Mrv-AU-dPc"/>
+                            <constraint firstItem="X4H-2M-zLV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LLj-wd-xJx" secondAttribute="leading" id="Mrv-AU-dPc"/>
                             <constraint firstItem="her-gL-1qU" firstAttribute="centerY" secondItem="ehW-0c-6q3" secondAttribute="centerY" id="NYa-Co-S10"/>
                             <constraint firstItem="j7z-gI-chj" firstAttribute="centerY" secondItem="Yom-qg-GWJ" secondAttribute="centerY" constant="1" id="Srh-De-DcU"/>
                             <constraint firstAttribute="bottom" secondItem="ehW-0c-6q3" secondAttribute="bottom" constant="10" id="VHf-Nx-Q8H"/>
                             <constraint firstItem="uiH-dQ-WUu" firstAttribute="top" secondItem="Yom-qg-GWJ" secondAttribute="bottom" constant="8" id="aR5-Fr-weR"/>
                             <constraint firstItem="her-gL-1qU" firstAttribute="leading" secondItem="ehW-0c-6q3" secondAttribute="trailing" constant="10" id="ai5-TT-TN1"/>
                             <constraint firstAttribute="trailing" secondItem="her-gL-1qU" secondAttribute="trailing" constant="10" id="cZR-mS-l9i"/>
-                            <constraint firstItem="j7z-gI-chj" firstAttribute="leading" secondItem="Yom-qg-GWJ" secondAttribute="trailing" constant="10" id="iJO-nO-tyD"/>
+                            <constraint firstItem="j7z-gI-chj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Yom-qg-GWJ" secondAttribute="trailing" constant="8" symbolic="YES" id="iJO-nO-tyD"/>
                             <constraint firstItem="uiH-dQ-WUu" firstAttribute="leading" secondItem="Sz0-RK-GbH" secondAttribute="leading" id="vEG-EW-WFz"/>
                             <constraint firstItem="ehW-0c-6q3" firstAttribute="top" secondItem="X4H-2M-zLV" secondAttribute="bottom" constant="4" id="x45-gS-cew"/>
                         </constraints>
