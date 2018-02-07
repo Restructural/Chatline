@@ -36,17 +36,20 @@
                         <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-ZN-z9B" userLabel="Email Stack View">
                             <rect key="frame" x="0.0" y="79" width="200" height="23"/>
                             <subviews>
-                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-YF-iIZ" userLabel="Email">
+                                <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-YF-iIZ" userLabel="Email">
                                     <rect key="frame" x="-2" y="1" width="204" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="22" id="H3w-8D-DmQ"/>
                                         <constraint firstAttribute="width" constant="200" id="ueU-wN-8fk"/>
                                     </constraints>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="Email" id="5U3-sD-z0Z">
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Email" id="5U3-sD-z0Z">
                                         <font key="font" size="13" name="HelveticaNeue"/>
                                         <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
+                                    <connections>
+                                        <outlet property="nextKeyView" destination="itm-kZ-ozr" id="e3T-x1-a7C"/>
+                                    </connections>
                                 </textField>
                                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="E3n-5I-MJE">
                                     <rect key="frame" x="0.0" y="-2" width="200" height="5"/>
@@ -67,13 +70,13 @@
                         <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G9V-20-OvI" userLabel="Password Stack View">
                             <rect key="frame" x="0.0" y="44" width="200" height="23"/>
                             <subviews>
-                                <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="itm-kZ-ozr" userLabel="Password">
+                                <secureTextField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="itm-kZ-ozr" userLabel="Password">
                                     <rect key="frame" x="-2" y="1" width="204" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="22" id="I7W-oZ-yz7"/>
                                         <constraint firstAttribute="width" constant="200" id="zSC-dE-aMR"/>
                                     </constraints>
-                                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" placeholderString="Password" usesSingleLineMode="YES" id="pRt-V1-c1O">
+                                    <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" focusRingType="none" placeholderString="Password" usesSingleLineMode="YES" id="pRt-V1-c1O">
                                         <font key="font" size="13" name="HelveticaNeue"/>
                                         <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -81,6 +84,9 @@
                                             <string>NSAllRomanInputSourcesLocaleIdentifier</string>
                                         </allowedInputSourceLocales>
                                     </secureTextFieldCell>
+                                    <connections>
+                                        <outlet property="nextKeyView" destination="6gO-YF-iIZ" id="8Tg-eg-ikd"/>
+                                    </connections>
                                 </secureTextField>
                                 <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="KRg-yz-4TT">
                                     <rect key="frame" x="0.0" y="-2" width="200" height="5"/>

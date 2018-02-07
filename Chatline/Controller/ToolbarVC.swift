@@ -34,6 +34,7 @@ class ToolbarVC: NSViewController {
     
     func setUpView() {
         NotificationCenter.default.addObserver(self, selector: #selector(ToolbarVC.presentModal(_:)), name: NOTIF_PRESENT_MODAL, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ToolbarVC.closeModalNotif(_:)), name: NOTIF_CLOSE_MODAL, object: nil)
         
         view.wantsLayer = true
         view.layer?.backgroundColor = chatGreen.cgColor
@@ -103,22 +104,35 @@ class ToolbarVC: NSViewController {
         
     }
     
+    @objc func closeModalNotif(_ notif: Notification) {
+        if let removeImmediately = notif.userInfo?[USER_INFO_REMOVE_IMMEDIATELY] as? Bool {
+            closeModal(removeImmediately)
+        } else {
+            closeModal()
+        }
+    }
+    
     @objc func closeModalClick(_ recognizer: NSClickGestureRecognizer) {
         closeModal()
     }
     
-    func closeModal() {
-        NSAnimationContext.runAnimationGroup({ (context) in
-            context.duration = 0.5
-            modalBGView.animator().alphaValue = 0.0
-            modalView.animator().alphaValue = 0.0
-            self.view.layoutSubtreeIfNeeded()
-        }, completionHandler: {
-            if self.modalBGView != nil {
-                self.modalBGView.removeFromSuperview()
-                self.modalBGView = nil
-            }
-            self.modalView.removeFromSuperview()  // close xib
-        })
+    func closeModal(_ removeImmediately: Bool = false) {  // Option to Revome Immediately
+        if removeImmediately {
+            self.modalView.removeFromSuperview()
+        } else {
+            NSAnimationContext.runAnimationGroup({ (context) in
+                context.duration = 0.5
+                modalBGView.animator().alphaValue = 0.0
+                modalView.animator().alphaValue = 0.0
+                self.view.layoutSubtreeIfNeeded()
+            }, completionHandler: {
+                if self.modalBGView != nil {
+                    self.modalBGView.removeFromSuperview()
+                    self.modalBGView = nil
+                }
+                self.modalView.removeFromSuperview()  // close xib
+            })
+        }
+        
     }
 }
