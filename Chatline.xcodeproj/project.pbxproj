@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8110CFA22031A3A7006779D4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110CFA12031A3A7006779D4 /* AuthService.swift */; };
 		811D20E2202786C500590BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20E1202786C500590BBC /* AppDelegate.swift */; };
 		811D20E6202786C500590BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D20E5202786C500590BBC /* Assets.xcassets */; };
 		811D20E9202786C500590BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811D20E7202786C500590BBC /* Main.storyboard */; };
@@ -21,9 +22,12 @@
 		811D2107202A4FBE00590BBC /* ModalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D2106202A4FBE00590BBC /* ModalLogin.swift */; };
 		81394305202B935700CB86C8 /* ModalCreateAccount.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81394304202B935700CB86C8 /* ModalCreateAccount.xib */; };
 		81394307202B936A00CB86C8 /* ModalCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81394306202B936A00CB86C8 /* ModalCreateAccount.swift */; };
+		FFE6F35BC99BC6DBD08E86FB /* Pods_Chatline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3918B73744B046E5431C2817 /* Pods_Chatline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3918B73744B046E5431C2817 /* Pods_Chatline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8110CFA12031A3A7006779D4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		811D20DE202786C500590BBC /* Chatline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D20E1202786C500590BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		811D20E5202786C500590BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 		811D2106202A4FBE00590BBC /* ModalLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLogin.swift; sourceTree = "<group>"; };
 		81394304202B935700CB86C8 /* ModalCreateAccount.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalCreateAccount.xib; sourceTree = "<group>"; };
 		81394306202B936A00CB86C8 /* ModalCreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCreateAccount.swift; sourceTree = "<group>"; };
+		CBEF5DB9AE792E3CDE3A505E /* Pods-Chatline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatline/Pods-Chatline.debug.xcconfig"; sourceTree = "<group>"; };
+		F29F9C73B6007E4618ECE2B8 /* Pods-Chatline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatline/Pods-Chatline.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +54,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE6F35BC99BC6DBD08E86FB /* Pods_Chatline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2796BB674D6B5D746114A5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3918B73744B046E5431C2817 /* Pods_Chatline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8110CFA02031A38B006779D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8110CFA12031A3A7006779D4 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		811D20D5202786C500590BBC = {
 			isa = PBXGroup;
 			children = (
 				811D20E0202786C500590BBC /* Chatline */,
 				811D20DF202786C500590BBC /* Products */,
+				D63864715A7A2AFFEA0517C5 /* Pods */,
+				2796BB674D6B5D746114A5D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 		811D20E0202786C500590BBC /* Chatline */ = {
 			isa = PBXGroup;
 			children = (
+				8110CFA02031A38B006779D4 /* Services */,
 				811D2103202A4F0B00590BBC /* Xibs */,
 				811D20FC2027984800590BBC /* Utilities */,
 				811D20F320278A3B00590BBC /* Model */,
@@ -133,6 +159,15 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
+		D63864715A7A2AFFEA0517C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBEF5DB9AE792E3CDE3A505E /* Pods-Chatline.debug.xcconfig */,
+				F29F9C73B6007E4618ECE2B8 /* Pods-Chatline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 811D20EE202786C500590BBC /* Build configuration list for PBXNativeTarget "Chatline" */;
 			buildPhases = (
+				79757EE914E0E6BD95962C64 /* [CP] Check Pods Manifest.lock */,
 				811D20DA202786C500590BBC /* Sources */,
 				811D20DB202786C500590BBC /* Frameworks */,
 				811D20DC202786C500590BBC /* Resources */,
+				B24C00028959CCF9DF1C5412 /* [CP] Embed Pods Frameworks */,
+				DBF3FD12E7392B914CCA9B24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +239,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79757EE914E0E6BD95962C64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chatline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24C00028959CCF9DF1C5412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Chatline/Pods-Chatline-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatline/Pods-Chatline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF3FD12E7392B914CCA9B24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chatline/Pods-Chatline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		811D20DA202786C500590BBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -211,6 +309,7 @@
 				811D2107202A4FBE00590BBC /* ModalLogin.swift in Sources */,
 				811D20F520278A7400590BBC /* ToolbarVC.swift in Sources */,
 				811D20F72027942C00590BBC /* ChannelVC.swift in Sources */,
+				8110CFA22031A3A7006779D4 /* AuthService.swift in Sources */,
 				811D20E2202786C500590BBC /* AppDelegate.swift in Sources */,
 				811D2102202A2D4500590BBC /* ClickBlockingView.swift in Sources */,
 				811D20FB202797AE00590BBC /* MainWindowController.swift in Sources */,
@@ -341,6 +440,7 @@
 		};
 		811D20EF202786C500590BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBEF5DB9AE792E3CDE3A505E /* Pods-Chatline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Chatline/Chatline.entitlements;
@@ -357,6 +457,7 @@
 		};
 		811D20F0202786C500590BBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29F9C73B6007E4618ECE2B8 /* Pods-Chatline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Chatline/Chatline.entitlements;
