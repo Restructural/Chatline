@@ -80,9 +80,11 @@ class AuthService {
                 let authToken = json["token"].stringValue
                 self.authToken = authToken
                 self.userEmail = userEmail
+                
                 self.isLoggedIn = true
-                completion(true)
                 }
+                completion(true)
+                
         
             } else {
                 completion(false)
@@ -123,9 +125,9 @@ class AuthService {
                 UserDataService.instance.id = userID
                 UserDataService.instance.avatarColor = avatarColor
                 UserDataService.instance.avatarName = avatarName
-                
-                completion(true)
                 }
+                completion(true)
+                
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
