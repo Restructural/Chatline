@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8110CFA22031A3A7006779D4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110CFA12031A3A7006779D4 /* AuthService.swift */; };
+		8110CFA42031B675006779D4 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110CFA32031B675006779D4 /* UserDataService.swift */; };
 		811D20E2202786C500590BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D20E1202786C500590BBC /* AppDelegate.swift */; };
 		811D20E6202786C500590BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D20E5202786C500590BBC /* Assets.xcassets */; };
 		811D20E9202786C500590BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811D20E7202786C500590BBC /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		3918B73744B046E5431C2817 /* Pods_Chatline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8110CFA12031A3A7006779D4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		8110CFA32031B675006779D4 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		811D20DE202786C500590BBC /* Chatline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811D20E1202786C500590BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		811D20E5202786C500590BBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				8110CFA12031A3A7006779D4 /* AuthService.swift */,
+				8110CFA32031B675006779D4 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				811D20F520278A7400590BBC /* ToolbarVC.swift in Sources */,
 				811D20F72027942C00590BBC /* ChannelVC.swift in Sources */,
 				8110CFA22031A3A7006779D4 /* AuthService.swift in Sources */,
+				8110CFA42031B675006779D4 /* UserDataService.swift in Sources */,
 				811D20E2202786C500590BBC /* AppDelegate.swift in Sources */,
 				811D2102202A2D4500590BBC /* ClickBlockingView.swift in Sources */,
 				811D20FB202797AE00590BBC /* MainWindowController.swift in Sources */,

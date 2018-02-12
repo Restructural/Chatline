@@ -14,6 +14,7 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 let BASE_URL = "https://chatlines.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
+let URL_USER_ADD = "\(BASE_URL)user/add"
 
 // Colours (font is NSColor backgrond is CGColor)
 let chatPurple = NSColor(calibratedRed: 0.10, green: 0.12, blue: 0.09, alpha: 1.00)
@@ -33,3 +34,9 @@ let USER_INFO_REMOVE_IMMEDIATELY = "modalRemoveImmediately"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+
+// Headers
+let HEADER = [
+    "Content-Type": "application/jason; charset=utf-8"
+]
+
